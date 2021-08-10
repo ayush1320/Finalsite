@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Holiday Homes</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="Main">
+			<div class="Logo">
+				<img src="Logo.png">
+			</div>
+			<ul>
+				<li class="active"><a href="Index.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Service.html">Services</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="Title">
+			<h1>Holiday Homes</h1>
+		</div>
+		<div class="slideshow-container">
+     <div class="mySlides fade">
+     <img src="HotelSwim.jpeg" style="width:100%">
+     <div class="text">SwimmingPool</div>
+    </div>
+
+    <div class="mySlides fade">
+  	 <img src="Lobby.jpeg" style="width:100%">
+     <div class="text">Lobby</div>
+    </div>
+    
+    <div class="mySlides fade">
+  	 <img src="Bedroom.jpeg" style="width:100%">
+     <div class="text">Bedroom</div>
+    </div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+		<div class="Button">
+			<a href="#" class="btn">Watch Videos</a>
+			<a href="#" class="btn">Learn More</a>
+		</div>
+	</header>
+      <div class="row">
+          <div class="col">
+           <i class="fa fa-envelope-open" aria-hidden="true"></i><br>
+           <h3>E-mail</h3>
+           <h5>ayush.manandhar2001@gmail.com</h5>
+
+          </div>
+          <div class="col">
+           <i class="fa fa-laptop" aria-hidden="true"></i><br>
+           <h3>Call us</h3>
+           <h5>9860-314877</h5>
+         </div>
+          <div class="col"> 
+           <i class="fa fa-globe" aria-hidden="true"></i><br>
+           <h3>Find us</h3>
+           <h5>HolidayHomes.com.np</h5>
+         </div>
+          <div class="col">
+           <i class="fa fa-ticket" aria-hidden="true"></i><br>
+           <h3>Bookings</h3>
+           <h5>Rs. 2500</h5>
+          </div>
+</div>
+</div>
+    <footer>© HolidayHomes.Com, All Rights Reserved</footer>
+
+</body>
+</html>

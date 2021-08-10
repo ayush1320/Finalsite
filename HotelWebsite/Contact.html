@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Holiday Homes</title>
+	<link rel="stylesheet" type="text/css" href="Contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="Main">
+			<div class="Logo">
+				<img src="Logo.png">
+			</div>
+			<ul>
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Service.html">Services</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li class="active"><a href="Contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<script defer src ="contact.js"></script>
+	
+		<div class="clear"></div>
+		<div class="contact">
+    <div class="container">
+    	<div id="error"></div>
+    	<form id="form" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="pnum">Phone Number</label>
+    <input type="number" id="pnum" name="phonenumber" placeholder="Your Phone Number..">
+
+    <label for="add">Address</label>
+    <input type="text" id="add" name="address" placeholder="Your Address..">
+
+    <label for="subject">Feedback</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+<button type="submit" class="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+     </form>
+    </div>
+</div>
+<div class="maps">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.9119469039633!2d83.93094031513716!3d28.20998770982955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDEyJzM1LjkiTiA4M8KwNTUnNTkuMyJF!5e0!3m2!1sen!2snp!4v1628443539321!5m2!1sen!2snp"  width="100%" height="650" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    	
+    </div>
